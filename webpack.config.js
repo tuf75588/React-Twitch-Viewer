@@ -1,5 +1,5 @@
-var path = require('path');
-var webpack = require('webpack');
+const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   // configure dev server
@@ -19,9 +19,9 @@ module.exports = {
   // output file
   output: {
     // set to current directory
-    path: __dirname,
+    path: path.resolve(__dirname, 'dist'),
     // output file name
-    filename: './bundle.js',
+    filename: 'bundle.js',
     // path for source map
     sourceMapFilename: "./bundle.js.map"
   },
